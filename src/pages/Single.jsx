@@ -1,33 +1,10 @@
 import Edit from "../img/edit.png"
 import Delete from "../img/delete.png"
+import {Link} from "react-router-dom"
+import Menu from "../components/Menu"
 
 const Single = () => {
-	const posts = [
-		{
-			id: 1,
-			title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-			desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-			img: "https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-		},
-		{
-			id: 2,
-			title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-			desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-			img: "https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-		},
-		{
-			id: 3,
-			title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-			desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-			img: "https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-		},
-		{
-			id: 4,
-			title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-			desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!",
-			img: "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-		},
-	]
+	
 
 	return (
 		<div className="single">
@@ -43,15 +20,25 @@ const Single = () => {
             <p>Posted 2 days ago</p>
           </div>
           <div className="edit">
-            <img src={Edit} alt="" />
-            <img src={Delete} alt="" />
-          </div>
-          
-				</div>
+            <Link to={`/write?edit=12`}>
+              <img src={Edit} alt="" />
+            </Link>
+            <Link to={`/write?delete=12`}>
+              <img src={Delete} alt="" />
+            </Link>
+          </div>          
+        </div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A possimus excepturi aliquid nihil cumque ipsam facere aperiam at! Ea dolorem ratione sit debitis deserunt repellendus numquam ab vel perspiciatis corporis!</p>
       </div>
       
       <div className="menu">
-        menu
+        <Menu/>
       </div>
 		</div>
 	)
