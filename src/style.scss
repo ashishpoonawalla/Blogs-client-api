@@ -195,5 +195,41 @@ $lightgreen: #b9e7e7;
       }
     }
 
+    // SINGLE POST
+
+    .single{
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+
+      .content{
+        flex: 5;
+        
+        img{
+
+        }
+
+        .user{
+
+          img{
+            width: 50px;
+            height: 50px;
+
+          }
+          .info{
+
+          }
+
+          .edit{
+
+          }
+        }
+      }
+
+      .menu{
+        flex: 2;
+      }
+    }
+
 	}
 }
