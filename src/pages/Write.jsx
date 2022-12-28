@@ -25,8 +25,8 @@ const Write = () => {
           <input type="file" id="file" name="" style={{display: "none"}}/>
           <label htmlFor="file">Upload Image</label>
           <div className="buttons">
-            <button>Save as a draft</button>
-            <button>Update</button>
+            <button className='bttn'>Save as a draft</button>
+            <button className='bttn'>Update</button>
           </div>
         </div>
         <div className="item">
@@ -36,23 +36,23 @@ const Write = () => {
             <label htmlFor="art">Art</label>
           </div>
           <div className="catList">
-            <input type="radio" id="science" value="science" name="science" />
+            <input type="radio" id="science" value="science" name="cat" />
             <label htmlFor="science">Science</label>
           </div>
           <div className="catList">
-            <input type="radio" id="technology" value="technology" name="technology" />
+            <input type="radio" id="technology" value="technology" name="cat" />
             <label htmlFor="technology">Technology</label>
           </div>
           <div className="catList">
-            <input type="radio" id="cinema" value="cinema" name="cinema" />
+            <input type="radio" id="cinema" value="cinema" name="cat" />
             <label htmlFor="cinema">Cinema</label>
           </div>
           <div className="catList">
-            <input type="radio" id="design" value="design" name="design" />
+            <input type="radio" id="design" value="design" name="cat" />
             <label htmlFor="design">Design</label>
           </div>
           <div className="catList">
-            <input type="radio" id="food" value="food" name="food" />
+            <input type="radio" id="food" value="food" name="cat" />
             <label htmlFor="food">Food</label>
           </div>
          
