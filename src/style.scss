@@ -3,6 +3,8 @@ $lightgreen: #b9e7e7;
 .app {
 	display: flex;
 	justify-content: center;
+	
+
 
 	.container {
 		width: 1024px;
@@ -15,10 +17,11 @@ $lightgreen: #b9e7e7;
 		//LOGIN & REGISTER
 
 		.auth {
+			
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background-color: $lightgreen;
+			background-color: white;
 			height: 100vh;
 			flex-direction: column;
 			font-size: 14px;
@@ -27,7 +30,7 @@ $lightgreen: #b9e7e7;
 				margin-top: 10px;
 				display: flex;
 				flex-direction: column;
-				background-color: white;
+				background-color: $lightgreen;
 				padding: 50px;
 				gap: 20px;
 			}
@@ -53,6 +56,7 @@ $lightgreen: #b9e7e7;
 				font-size: 12px;
 			}
 		}
+
 
 		//Navbar
 

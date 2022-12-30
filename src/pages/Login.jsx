@@ -27,7 +27,7 @@ const Login = () => {
 
 	return (
 		<div className="auth">
-			<h1>Sign up</h1>
+			<h1>Login</h1>
 			<form>
         <input
           required
@@ -46,7 +46,7 @@ const Login = () => {
 				<button onClick={handleSubmit}>Sign up</button>
 				{err && <span>{err}</span>}
 				<p>
-					already have account? <Link to="/login">Login</Link>
+					Don't have account? <Link to="/register">Sign up</Link>
 				</p>
 			</form>
 		</div>
