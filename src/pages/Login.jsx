@@ -12,16 +12,20 @@ const Login = () => {
 	const navigate = useNavigate()
 
 	const handleChange = (e) => {
-		setInputs((prev) => ({...prev, [e.target.name]: e.target.value}))
+		setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+		console.log(inputs)
 	}
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
+		console.log(1);
 		try {
 			await axios.post("auth/login", inputs)
-			navigate("/login")
+			console.log(2)
+			navigate("/")
 		} catch (err) {
 			setError(err.response.data)
+			console.log(3);
 		}
 	}
 
@@ -43,7 +47,7 @@ const Login = () => {
 					name="password"
 					onChange={handleChange}
 				/>
-				<button onClick={handleSubmit}>Sign up</button>
+				<button onClick={handleSubmit}>Login</button>
 				{err && <span>{err}</span>}
 				<p>
 					Don't have account? <Link to="/register">Sign up</Link>
